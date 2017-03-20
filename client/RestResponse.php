@@ -46,6 +46,11 @@ class RestResponse
 	{
 		return $this->headers;
 	}
+	
+	public function getHeader($header)
+	{
+		return $this->headers[$header];
+	}
 
 	public function setBody($body)
 	{
